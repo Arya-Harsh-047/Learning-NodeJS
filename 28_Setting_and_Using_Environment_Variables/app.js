@@ -30,7 +30,7 @@ const fs = require("fs");
 
 const fileData = fs.readFileSync("./.env").toString();
 
-fileData.split("\n").forEach((variable)=>{
+fileData.split("/\r?\n/").forEach((variable)=>{
     const[key,value]= variable.split("=");
     process.env[key]=value;
 });
