@@ -31,5 +31,11 @@ const fs = require("fs");
 const fileData = fs.readFileSync("./abcd").toString();
 
 fileData.split("\n").forEach((variable)=>{
-    variable.split("=");
+    const[key,value]= variable.split("=");
+    process.env[key]=value;
 });
+
+setInterval(()=>{
+   const a = process.env;
+    console.log('Hii');
+},1000)
