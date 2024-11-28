@@ -28,7 +28,7 @@ exec(`powershell -Command "setx My_Name 'Node JS' /M"`);
 
 const fs = require("fs");
 
-const fileData = fs.readFileSync("./abcd").toString();
+const fileData = fs.readFileSync("./.env").toString();
 
 fileData.split("\n").forEach((variable)=>{
     const[key,value]= variable.split("=");
