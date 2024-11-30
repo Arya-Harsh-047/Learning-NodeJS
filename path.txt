@@ -8,3 +8,12 @@ C:\Users\User\Documents\Report.txt
 
 
 
+Relative Path: A relative path specifies a file or directory location relative to the current working directory. This type of path is useful when you want to refer to a location without needing the full path, making it more flexible and adaptable to different environments.
+
+ For example, if your current working directory is /home/user, a relative path to the report.txt file might be:
+
+documents/report.txt
+
+In a Windows system, if the current directory is C:\Users\User, the relative path might be:
+
+Documents\Report.txt
