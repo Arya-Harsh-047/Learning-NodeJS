@@ -1,0 +1,10 @@
+Absolute Path: An absolute path provides the complete location of a file or directory from the root directory. It always starts from the root directory and includes all directories leading to the specific file or directory. This path is independent of the current working directory. For example, in a Unix-like system (linux), an absolute path might look like:
+
+/home/user/documents/report.txt
+
+In a Windows system, an absolute path might look like:
+
+C:\Users\User\Documents\Report.txt
+
+
+
