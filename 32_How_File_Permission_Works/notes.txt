@@ -108,3 +108,21 @@ To change the file’s owner or group, use the "chown" command:
 
 3. Change the group only:
     chgrp newgroup myfile.txt
+
+
+
+
+
+
+
+* Directory Permissions:
+For directories, the execute permission (x) is required to access or list the contents of a directory. Here are some common commands:
+
+1. List files in a directory (requires read and execute permissions on the directory):
+    ls /path/to/directory
+
+2. Change into a directory (requires execute permission on the directory):
+    cd /path/to/directory
+
+3. Add a file to a directory (requires write permission on the directory):
+    touch /path/to/directory/newfile.txt
