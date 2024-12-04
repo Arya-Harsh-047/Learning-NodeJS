@@ -2,3 +2,22 @@ Managing file permissions is an important task in maintaining the security and i
 
 
 
+Types of File Permissions:-
+
+In Unix-like operating systems, there are three types of file permissions:
+
+1. Read (r) – Allows the user to open and view the contents of a file. 
+
+2. Write (w) – Allows the user to modify the contents of a file or directory (i.
+e., add, remove, or rename files in a directory).
+
+3. Execute (x) – Allows the user to run a file as a program/script. For directories, it allows the user to access files in the directory.
+
+
+
+
+NOTE:These permissions apply to three categories of users:
+
+a. Owner (User): The user who owns the file.
+b.Group: Users who are part of the file’s group.
+c.Others: All other users on the system.
