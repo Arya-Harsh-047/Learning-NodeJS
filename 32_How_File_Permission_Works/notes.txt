@@ -47,3 +47,46 @@ Modifying File Permissions:
 
 Permissions can be modified using the chmod command. There are two ways to set permissions: symbolic (using letters) and numeric (using numbers).
 
+1. Symbolic Method:
+
+a. r = read
+b. w = write
+c. x = execute
+d. + = add a permission
+e. - = remove a permission
+f. = = set a specific permission
+
+Examples:
+
+A. Grant execute permission to the owner:
+    chmod u+x myfile.txt
+
+B. Remove write permission for the group:
+    chmod g-w myfile.txt
+
+C. Grant read and execute permission to others:
+    chmod o+rx myfile.txt
+
+D. Set permissions explicitly (e.g., owner can read/write, group can read, others have no permissions):
+    chmod u=rw,g=r,o= myfile.txt
+
+
+
+2. Numeric Method:
+
+Permissions can also be set using numbers, where:
+
+a. r = 4
+b. w = 2
+c. x = 1
+d. - = 0
+
+To set permissions using the numeric method:
+
+Example: Give the owner full permissions, the group read/write permissions, and others read-only permissions:
+    chmod 764 myfile.txt
+
+In this case:
+7 (owner) = read + write + execute (4 + 2 + 1)
+6 (group) = read + write (4 + 2)
+4 (others) = read (4)
