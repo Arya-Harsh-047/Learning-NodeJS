@@ -39,3 +39,11 @@ The first character (-) indicates it's a regular file (it would be d for a direc
 The next three characters (rwx) show the permissions for the owner (read, write, and execute).
 The next three characters (r-x) show the permissions for the group (read and execute).
 The last three characters (r-x) show the permissions for others (read and execute).        
+
+
+
+
+Modifying File Permissions:
+
+Permissions can be modified using the chmod command. There are two ways to set permissions: symbolic (using letters) and numeric (using numbers).
+
