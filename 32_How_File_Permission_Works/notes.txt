@@ -21,3 +21,21 @@ NOTE:These permissions apply to three categories of users:
 a. Owner (User): The user who owns the file.
 b.Group: Users who are part of the file’s group.
 c.Others: All other users on the system.
+
+
+
+
+Viewing File Permissions: 
+
+To view the current file permissions, use the ls -l command:
+
+    Ex:- $ ls -l myfile.txt
+    We get output:
+        -rwxr-xr-x 1 user group 1234 Dec 4 14:32 myfile.txt
+
+The output shows:
+
+The first character (-) indicates it's a regular file (it would be d for a directory).
+The next three characters (rwx) show the permissions for the owner (read, write, and execute).
+The next three characters (r-x) show the permissions for the group (read and execute).
+The last three characters (r-x) show the permissions for others (read and execute).        
