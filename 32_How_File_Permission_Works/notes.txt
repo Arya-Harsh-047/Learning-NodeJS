@@ -2,7 +2,7 @@ Managing file permissions is an important task in maintaining the security and i
 
 
 
-Types of File Permissions:-
+* Types of File Permissions:-
 
 In Unix-like operating systems, there are three types of file permissions:
 
@@ -25,7 +25,7 @@ c.Others: All other users on the system.
 
 
 
-Viewing File Permissions: 
+* Viewing File Permissions: 
 
 To view the current file permissions, use the ls -l command:
 
@@ -43,7 +43,7 @@ The last three characters (r-x) show the permissions for others (read and execut
 
 
 
-Modifying File Permissions:
+* Modifying File Permissions:
 
 Permissions can be modified using the chmod command. There are two ways to set permissions: symbolic (using letters) and numeric (using numbers).
 
@@ -90,3 +90,21 @@ In this case:
 7 (owner) = read + write + execute (4 + 2 + 1)
 6 (group) = read + write (4 + 2)
 4 (others) = read (4)
+
+
+
+
+
+* Modifying Ownership and Group:
+
+
+To change the file’s owner or group, use the "chown" command:
+
+1. Change the owner:
+    chown newowner myfile.txt
+
+2. Change both owner and group:
+    chown newowner:newgroup myfile.txt
+
+3. Change the group only:
+    chgrp newgroup myfile.txt
