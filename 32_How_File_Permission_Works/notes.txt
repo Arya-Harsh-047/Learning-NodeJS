@@ -1,0 +1,4 @@
+Managing file permissions is an important task in maintaining the security and integrity of a system. It controls who can read, write, or execute a file, and it can be crucial for both system administration and collaborative environments. 
+
+
+
