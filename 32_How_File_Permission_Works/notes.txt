@@ -2,7 +2,15 @@ Managing file permissions is an important task in maintaining the security and i
 
 
 
-* Types of File Permissions:-
+* Permissions are divided into three categories:
+
+1. Owner: The user who owns the file or directory.
+2. Group: The group associated with the file or directory.
+3. Others: All other users on the system.
+
+
+
+* Each of these categories has three types of File Permissions:-
 
 In Unix-like operating systems, there are three types of file permissions:
 
