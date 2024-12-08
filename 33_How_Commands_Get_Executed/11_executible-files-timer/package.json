@@ -1,0 +1,11 @@
+{
+  "name": "timer",
+  "bin": "app.js",
+  "scripts": {
+    "build": "pkg -t node16-win-x64 .",
+    "start":  ""
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
