@@ -1,0 +1,50 @@
+There are several types of commands in Bash, which can be categorized as follows:
+
+
+1. Aliases:
+Aliases are custom shortcuts to commands or series of commands. They are often used to save time or to set default options.
+
+
+Example:    alias ll="ls -l"
+
+-> Bash 1st check  if the command matches any defined Aliases.
+
+2. Shell Functions: 
+Functions are custom commands defined by the user in a shell script or interactively. A function allows you to group commands together and reuse them with a single name.
+
+Example:    my_function() {
+             echo "Hello, World!"
+                }
+
+-> After checking for Alias commands bash check for any defined shell function.
+
+
+
+
+3.  Built-in Commands:
+Built-in commands are those that are part of the shell itself, and they don't require external programs. They are executed directly by the shell and are often used to control the shell environment.
+
+Examples:
+"cd" – Change the current directory.
+"echo" – Print text or variables to the terminal.
+"exit" – Exit from the shell or script.
+"history" – Show command history.
+"set" – Set or unset shell options and variables
+
+-> After checking for Alias & shell functions bash check for built-ins commands.
+
+
+
+
+4.Hash Tables:
+The function of a hash table (or associative array in Bash) is to efficiently store and retrieve key-value pairs. The primary advantage of a hash table is that it allows for fast access to values using keys, typically offering constant-time (O(1)) lookup, insertion, and deletion operations on average.
+
+-> BAsh checks its hash table of previously looked up executables to quickly locate executables.
+
+
+
+
+
+5. Exeutable Files: It is files that contain instruction or programm that a computer can run directly when opened.
+
+-> After checking for Alias, shell functions , built-ins & hash tables bash check/search through the directory listed in the path environment variables, in the order they appear, to find an executable file matching the commandd name.
