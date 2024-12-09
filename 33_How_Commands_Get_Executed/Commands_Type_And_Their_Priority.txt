@@ -31,7 +31,7 @@ Examples:
 "history" – Show command history.
 "set" – Set or unset shell options and variables
 
--> After checking for Alias & shell functions bash check for built-ins commands.
+-> After checking for Alias & shell functions bash check for built-ins commands .
 
 
 
@@ -41,6 +41,15 @@ The function of a hash table (or associative array in Bash) is to efficiently st
 
 -> BAsh checks its hash table of previously looked up executables to quickly locate executables.
 
+command "hash"  :  
+
+output-
+Hits    command
+   2    /c/Program Files/nodejs/node.exe
+   3    /c/Users/Harsh arya/AppData/Local/Programs/Microsoft VS Code/bin/code
+   3    /usr/bin/winpty
+   1    /c/windows/explorer
+   1    /usr/bin/rm
 
 
 
@@ -48,3 +57,34 @@ The function of a hash table (or associative array in Bash) is to efficiently st
 5. Exeutable Files: It is files that contain instruction or programm that a computer can run directly when opened.
 
 -> After checking for Alias, shell functions , built-ins & hash tables bash check/search through the directory listed in the path environment variables, in the order they appear, to find an executable file matching the commandd name.
+
+echo $PATH | tr ":" "\n" to see all directory in path environment variables
+
+
+
+
+
+
+
+
+
+
+
+
+What is Winpty.exe?:
+
+Winpty.exe is a Windows utility that is used to enable the use of certain interactive programs in Windows when running them in a Bash shell or other terminal environments that are not fully compatible with Windows console applications. It's particularly useful when working with Windows Subsystem for Linux (WSL), Git Bash, or MSYS2, where certain programs that expect to be run in a native Windows console might not behave correctly when run in a Unix-like terminal.
+
+Why winpty.exe is Needed
+The problem arises because the Windows console (CMD or PowerShell) and the Unix-like environments (Bash, WSL) handle terminal input and output differently. Specifically:
+
+Windows Console (CMD/PowerShell): Windows console applications expect to interact directly with the console window for things like handling keyboard input, resizing the window, or drawing text at specific positions.
+Bash/Unix-like Terminals: These environments typically expect programs to interact with them in a different way (e.g., ANSI escape codes for colors and cursor movements).
+Some Windows applications (like git bash, vim, less, nano, or vim in WSL) are built to expect a traditional Windows console to properly handle interactive input/output. When such applications are run in environments like WSL, Git Bash, or MSYS2, they might not behave as expected—issues such as the application not responding to keyboard input or not displaying correctly on the screen can occur.
+
+This is where winpty.exe comes into play.
+
+Function of winpty.exe
+Enables Interaction: winpty.exe provides a Windows console interface for programs that expect to interact with the Windows console, ensuring they behave correctly when run from a non-native environment (like Bash running inside WSL or Git Bash).
+Emulates a Console: It acts as a bridge between the Bash-like environment and the native Windows console, handling the input/output in a way that Windows applications can understand and interact with.
+Terminal Emulator: It effectively enables interactive Windows console applications to run properly inside Unix-like environments, where they normally would not.
